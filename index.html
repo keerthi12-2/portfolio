@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX software developer</p>
+            <h1>HI,I'm<span>Keerthi B S</span><br>from Bangalore</h1>
+        </div>
+    </div>
+</div>
+<!----------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                    <p>I'm friendly,confident,optimistic,organized B.E student
+                        in software course. I have technical skills like c,c++,java,python,
+                        basic of web development and with soft skills. I have done with mini
+                        projects and internships. I can manage multiple tasks attime.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web</li>
+                            <li><span>Web Development</span><br> web App Development</li>
+                            <li><span>Python Development</span><br>Designing applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>UI/UX Machine Learning at Technofly solution.</li>
+                            <li><span>2023</span><br>web development from Moody's.</li>
+                            <li><span>2023</span><br>internship from Technofly solution.</li>
+                            <li><span>2023</span><br>internship from Languify</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Design Training at coincent.</li>
+                            <li><span>2021</span><br>PUC from VCC Kolar. </li>
+                            <li><span>2025</span><br>B.E from DR. A.I.T Bangalore.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------services------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>web developer,app developer, applications developer,
+                    sample projects,case studies,logs.</p>
+                    <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>web developer,app developer, applications developer,
+                    sample projects,case studies,logs.</p>
+                    <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <h2>Python Development</h2>
+                <p>web developer,app developer, applications developer,
+                    sample projects,case studies,logs.</p>
+                    <a href="#"> Learn more</a>
+            </div>
+
+
+         </div>
+    </div>
+
+</div>
+<!-----------------portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>  
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <diV class="layer">
+                    <h3>SocialMediaApp</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                </div>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.png">
+            <diV class="layer">
+                <h3>MusicApp</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store.</p>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png">
+            <diV class="layer">
+                <h3>OnlineShoppingApp</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store.</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+</div>
+<!-----------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left"></div>
+        <h1 class="sub-title">contact me</h1>
+        <p>saikeerthireddy012@gmail.com</p>
+        <p>3456789021</p>
+        <div class="social-icons">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="images/cv.png" download class="btn btn2">Download CV</a>
+        <div class="contact-right"></div>
+        <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea type="text" name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+        </form>
+    </div>
+</div>
+<div>
+    <div class="copyright">
+        <p>Copyright @ keerthi. Made with by self</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+</body>
+</html>
